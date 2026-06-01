@@ -1,5 +1,6 @@
 import DynamicProgramming.Fibonacci;
 import DynamicProgramming.FrogJumpWithKDistance;
+import Foundation.Basic;
 import Graphs.AdjacencyList;
 import Graphs.AdjacencyMatrix;
 
@@ -29,9 +30,12 @@ void main() {
 //    adj.displayMatrix();
 
 
-    AdjacencyList list = new AdjacencyList(5);
-    list.addEdge(1, 3);
-    list.addEdge(1, 4);
-    list.addEdge(2, 3);
-    list.printList();
+//    AdjacencyList list = new AdjacencyList(5);
+//    list.addEdge(1, 3);
+//    list.addEdge(1, 4);
+//    list.addEdge(2, 3);
+//    list.printList();
+
+    Basic.PracticeBasic();
+
 }
