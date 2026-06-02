@@ -49,9 +49,18 @@ public class Basic {
         // Check if the number is palindrome or not.
 
         // Nested Loops
-        // Pattern 1, 2
 
-        // Arrays
+
+        // Pattern 1 (Revision), 2, 3
+
+        // Arrays - declaration, Printing the array using for each loop, Print the array in reverse order, Sum and multiply the elements of the array, Reverse the array, Check if the array is palindrome or not,
+        int []arr = new int[5]; // int []arr = {1,2,3,4,5}
+
+        for(int r : arr){
+            System.out.println(r);
+        }
+
+        // 2D arrays - Creation, printing, using foreach loop on it, adding the elements of two 2d arrays.
 
 
         // Methods

@@ -78,9 +78,40 @@ public class QuestionBank5 {
     // Count the number of Set Bits in an integer - in TestPad
 
     // Check kth bit is set or not - https://www.geeksforgeeks.org/problems/check-whether-k-th-bit-is-set-or-not-1587115620/1
+    static boolean checkKthBit(int n, int k) {
+        // code here
+
+        int bit = 0;
+        while(k > 0){
+            n = n >> 1;
+            k--;
+        }
+
+        return (n & 1) == 1;
+    }
 
     // print all bits with condition - https://www.geeksforgeeks.org/problems/generate-all-binary-strings/1
-    void printAllBits(int n){}
+    void printAllBits(int n){
+        public static void solve(int n, ArrayList<String> ans, String curr){
+            if(n == 0){
+                ans.add(curr);
+                return;
+            }
+
+            // fill place with 0
+            solve(n - 1, ans, curr + "0");
+
+            // fill place with 1
+            solve(n - 1, ans, curr + "1");
+        }
+
+        public ArrayList<String> binstr(int n) {
+            // code here
+            ArrayList<String> ans = new ArrayList<>();
+            solve(n, ans, "");
+            return ans;
+        }
+    }
 
     // kth bit is set
     static void generate(int idx, int n, int k, String ans) {

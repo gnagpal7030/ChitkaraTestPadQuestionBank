@@ -1,5 +1,7 @@
 package TestPad;
 
+import java.util.*;
+
 public class QuestionBank7 {
 
 //    OOPs questions are skipped
@@ -33,7 +35,7 @@ public class QuestionBank7 {
     }
 
     // Least Favourite Number
-    void findLeastFavNumber(){
+    int findLeastFavNumber(){
         Map<Integer, Integer> freq = new HashMap<>();
 
         for (int num : arr) {
